@@ -1,0 +1,61 @@
+.quiz
+  background-color: $white
+  padding-top: 80px
+  padding-bottom: 80px
+  &__title, .quiz__subtitle
+    text-align: center
+  &__subtitle
+    position: relative
+    margin-bottom: 80px
+    &::after
+      content: ''
+      position: absolute
+      bottom: -40px
+      left: 50%
+      transform: translateX(-50%)
+      width: 275px
+      height: 1px
+      background-color: $purple
+  &__text
+    font-family: 'Gilroy-Regular'
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    text-align: center
+    color: $purple
+    max-width: 1050px
+    margin: auto
+    margin-bottom: 95px
+  &__img
+    position: relative
+  &__dots
+    position: absolute
+    top: 23%
+    left: -43px
+  &__box
+    &-title
+      font-family: 'Gilroy-Bold'
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+      color: $dark
+      max-width: 615px
+      margin-bottom: 40px
+  &__ul
+    max-width: 660px
+    font-family: 'Gilroy-Regular'
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 150%
+    color: $dark
+    list-style-type: none
+    list-style-image: url(../img/quiz/Ellipse.png)
+    padding-left: 30px
+    margin-bottom: 60px
+  &__li
+    margin-bottom: 30px
+    &:last-of-type
+      margin-bottom: 0 !important
