@@ -332,7 +332,7 @@ img {
   height: auto; }
 
 body {
-  background-color: #261E3B; }
+  background-color: #F0F4FB; }
 
 .section {
   padding-left: 20px;
@@ -371,6 +371,21 @@ body {
     outline: none; }
   .button:hover {
     background: linear-gradient(0deg, #653CBC 0%, #2e0c77 100%); }
+
+.subtitle-purple {
+  font-family: 'Gilroy-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #653CBC;
+  max-width: 1050px;
+  margin: auto;
+  margin-bottom: 95px; }
+
+.position-relative {
+  position: relative; }
 
 .container {
   max-width: 1450px;
@@ -424,7 +439,8 @@ body {
 .main {
   padding: 160px 20px;
   background: url(../img/main/man.png) no-repeat;
-  background-position-x: 90%; }
+  background-position-x: 90%;
+  background-color: #261E3B; }
   .main__title {
     max-width: 650px;
     font-family: 'Gilroy-Black';
@@ -629,17 +645,6 @@ body {
       width: 275px;
       height: 1px;
       background-color: #653CBC; }
-  .quiz__text {
-    font-family: 'Gilroy-Regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #653CBC;
-    max-width: 1050px;
-    margin: auto;
-    margin-bottom: 95px; }
   .quiz__img {
     position: relative; }
   .quiz__dots {
@@ -695,7 +700,8 @@ body {
     margin: 30px 0; }
 
 .help {
-  background-color: #F0F4FB; }
+  background-color: #F0F4FB;
+  position: relative; }
   .help__inner {
     width: 100%; }
   .help__row {
@@ -703,6 +709,76 @@ body {
     flex-wrap: wrap; }
   .help__title {
     text-align: center; }
+  .help__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4vw 0; }
+  .help__box {
+    width: 255px; }
+    .help__box__header {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px; }
+      .help__box__header div {
+        position: relative; }
+    .help__box__discription {
+      font-family: 'Gilroy-Regular';
+      font-size: 18px;
+      text-align: center; }
+    .help__box__num {
+      font-family: 'Gilroy-Bold';
+      font-size: 16px;
+      position: absolute;
+      color: #C7D0E0;
+      top: 0;
+      right: 0; }
+  .help__screen {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -300px;
+    width: 80%;
+    display: flex;
+    justify-content: center; }
+    .help__screen__inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 80%;
+      max-width: 1500px;
+      width: 80%; }
+      .help__screen__inner p {
+        color: #fff;
+        font-size: 24px;
+        font-family: 'Gilroy-Regular';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center; }
+    .help__screen img {
+      max-width: 1500px;
+      width: 100%;
+      margin: 0 auto; }
+
+.form-block {
+  padding-top: 400px;
+  background-color: #FFFFFF; }
+  .form-block__subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+
+.parallelogram {
+  margin-left: 20px;
+  background-color: #653CBC;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transform: skew(-15deg); }
+  .parallelogram p {
+    transform: skew(15deg); }
 
 @media screen and (max-width: 1600px) {
   .debt__money--1 {
@@ -717,7 +793,11 @@ body {
   .trust__wrap {
     padding-left: 0; }
     .trust__wrap-case {
-      margin-right: 20px; } }
+      margin-right: 20px; }
+  .help__box {
+    width: 200px; }
+  .help__screen__inner p {
+    font-size: 18px; } }
 
 @media screen and (max-width: 1200px) {
   .trust {
@@ -762,7 +842,9 @@ body {
     .security__title {
       text-align: center; }
     .security__subtitle {
-      text-align: center; } }
+      text-align: center; }
+  .help__screen__inner p {
+    font-size: 16px; } }
 
 @media screen and (max-width: 992px) {
   .quiz__text {
@@ -854,7 +936,27 @@ body {
     .debt__text {
       margin-bottom: 50px; }
     .debt__money {
-      display: none; } }
+      display: none; }
+  .help__screen {
+    background-color: #261E3B;
+    position: relative;
+    width: 100%;
+    left: auto;
+    transform: none;
+    bottom: auto; }
+    .help__screen img {
+      display: none; }
+    .help__screen__inner {
+      position: relative;
+      width: 100%;
+      top: auto;
+      left: auto;
+      transform: none;
+      height: auto;
+      padding: 70px; }
+      .help__screen__inner p {
+        position: relative;
+        font-size: 24px; } }
 
 @media screen and (max-width: 850px) {
   .debt__dots {
@@ -961,7 +1063,11 @@ body {
     .debt__card-text {
       margin: auto; }
     .debt__text {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  .help__inner {
+    justify-content: center; }
+  .help__box {
+    margin: 10px 0; } }
 
 @media screen and (max-width: 575px) {
   .quiz__title {
@@ -1031,7 +1137,22 @@ body {
       line-height: 17px; }
     .debt__text {
       font-size: 20px;
-      line-height: 24px; } }
+      line-height: 24px; }
+  .help__box {
+    width: 150px; }
+    .help__box__discription {
+      font-size: 14px; }
+    .help__box__num {
+      display: none; }
+    .help__box__header__inner {
+      display: flex;
+      justify-content: center; }
+    .help__box__header img {
+      width: 80%; }
+  .help__screen__inner {
+    padding: 70px 15px; }
+    .help__screen__inner p {
+      font-size: 16px; } }
 
 @media screen and (max-width: 420px) {
   .quiz__text {
