@@ -6,14 +6,29 @@
         display: flex
         flex-wrap: wrap
         align-items: center
+    &__list
+        color: $dark
+        font-size: 18px
+        @include f-fam-Gil-R
 
-.parallelogram
-    margin-left: 20px
-    background-color: $purple
-    color: #fff
-    padding: 5px 20px
-    border-radius: 5px
-    transform: skew(-15deg)
+    &__item
+        list-style: none
+        position: relative
+        margin: 20px 0
+        padding-left: 20px
 
-    p
-        transform: skew(15deg)
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -30px
+            width: 32px
+            height: 32px
+            background-image: url(../img/form-block/ico-check.svg)
+            background-repeat: no-repeat
+            background-size: cover
+    &__offer
+        background-color: #E8E2F5
+        padding: 20px 0 20px 40px
+        font-size: 24px
+        @include f-fam-Gil-R

@@ -387,6 +387,16 @@ body {
 .position-relative {
   position: relative; }
 
+.parallelogram {
+  margin-left: 20px;
+  background-color: #653CBC;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transform: skew(-15deg); }
+  .parallelogram p {
+    transform: skew(15deg); }
+
 .container {
   max-width: 1450px;
   margin: auto; }
@@ -769,16 +779,30 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center; }
-
-.parallelogram {
-  margin-left: 20px;
-  background-color: #653CBC;
-  color: #fff;
-  padding: 5px 20px;
-  border-radius: 5px;
-  transform: skew(-15deg); }
-  .parallelogram p {
-    transform: skew(15deg); }
+  .form-block__list {
+    color: #261E3B;
+    font-size: 18px;
+    font-family: 'Gilroy-Regular'; }
+  .form-block__item {
+    list-style: none;
+    position: relative;
+    margin: 20px 0;
+    padding-left: 20px; }
+    .form-block__item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -30px;
+      width: 32px;
+      height: 32px;
+      background-image: url(../img/form-block/ico-check.svg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .form-block__offer {
+    background-color: #E8E2F5;
+    padding: 20px 0 20px 40px;
+    font-size: 24px;
+    font-family: 'Gilroy-Regular'; }
 
 @media screen and (max-width: 1600px) {
   .debt__money--1 {
