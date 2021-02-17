@@ -66,3 +66,84 @@ body
     transform: skew(-15deg)
     p
         transform: skew(15deg)
+
+.chack-mas
+    fill: #A1A1A1
+
+.form-container
+    position: relative
+    border: 1px solid #653CBC
+    border-radius: 15px
+    background-color: #fff
+    z-index: 4
+    position: relative
+    padding: 40px 30px;
+
+.substrate
+    background-color: #653CBC
+    position: absolute
+    width: 50%
+    height: 90%
+    top: 50%
+    transform: translateY(-50%)
+    border-radius: 15px
+    left: -10px
+    z-index: 1
+
+.form
+    @include f-fam-Gil-R
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .input
+        margin-bottom: 15px
+        padding: 15px 30px
+        border-radius: 15px
+        outline: none
+        border: 1px solid #E0E0E0
+
+    &__title
+        text-align: center
+        font-size: 24px
+        font-weight: 400
+        margin-bottom: 20px
+
+    &__radio-container
+        display: flex
+        &__title
+            color: #595959
+            font-weight: 400
+            margin: 30px 0 15px
+
+    input[type=radio]
+        display: none
+
+    label
+        cursor: pointer
+        line-height: 34px
+        user-select: none
+        display: flex
+        width: 50px
+        height: 50px
+        justify-content: center
+        align-items: center
+
+    input[type=radio]:checked + label
+        border: 2px solid #653CBC
+        border-radius: 50%
+
+    input[type=radio]:checked + label svg path
+        fill: #653CBC
+
+    &__footer
+        margin-top: 20px
+        p
+            text-align: center
+            color: #595959
+            font-size: 14px
+            margin-top: 10px
+
+
+.text-center
+    text-align: center

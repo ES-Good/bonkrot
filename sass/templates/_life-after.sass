@@ -1,0 +1,35 @@
+.life-after
+    &__subtitle
+        margin-bottom: 4vw
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            bottom: -40px
+            left: 50%
+            transform: translateX(-50%)
+            width: 275px
+            height: 1px
+            background-color: #653CBC
+
+    &__card-step
+        border: 1px solid rgba(101, 60, 188, .3)
+        background-color: #E2E2F5
+        border-radius: 5px
+        display: flex
+        align-items: center
+        max-width: 530px
+        width: 100%
+        margin: 0 20px
+        height: 150px
+        padding: 0 30px
+        &__num
+            @include f-fam-Gil-Bo
+            font-weight: 900
+            font-size: 72px
+            color: $purple
+            margin-right: 20px
+        &__main
+            font-size: 18px
+            @include f-fam-Gil-R
+            font-weight: 400

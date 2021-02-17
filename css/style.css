@@ -397,6 +397,81 @@ body {
   .parallelogram p {
     transform: skew(15deg); }
 
+.chack-mas {
+  fill: #A1A1A1; }
+
+.form-container {
+  position: relative;
+  border: 1px solid #653CBC;
+  border-radius: 15px;
+  background-color: #fff;
+  z-index: 4;
+  position: relative;
+  padding: 40px 30px; }
+
+.substrate {
+  background-color: #653CBC;
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  left: -10px;
+  z-index: 1; }
+
+.form {
+  font-family: 'Gilroy-Regular';
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form .input {
+    margin-bottom: 15px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #E0E0E0; }
+  .form__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .form__radio-container {
+    display: flex; }
+    .form__radio-container__title {
+      color: #595959;
+      font-weight: 400;
+      margin: 30px 0 15px; }
+  .form input[type=radio] {
+    display: none; }
+  .form label {
+    cursor: pointer;
+    line-height: 34px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center; }
+  .form input[type=radio]:checked + label {
+    border: 2px solid #653CBC;
+    border-radius: 50%; }
+  .form input[type=radio]:checked + label svg path {
+    fill: #653CBC; }
+  .form__footer {
+    margin-top: 20px; }
+    .form__footer p {
+      text-align: center;
+      color: #595959;
+      font-size: 14px;
+      margin-top: 10px; }
+
+.text-center {
+  text-align: center; }
+
 .container {
   max-width: 1450px;
   margin: auto; }
@@ -775,6 +850,10 @@ body {
 .form-block {
   padding-top: 400px;
   background-color: #FFFFFF; }
+  .form-block__row {
+    justify-content: center; }
+  .form-block__description {
+    margin-right: 10vw; }
   .form-block__subtitle {
     display: flex;
     flex-wrap: wrap;
@@ -782,6 +861,7 @@ body {
   .form-block__list {
     color: #261E3B;
     font-size: 18px;
+    margin: 4vw 0;
     font-family: 'Gilroy-Regular'; }
   .form-block__item {
     list-style: none;
@@ -804,6 +884,41 @@ body {
     font-size: 24px;
     font-family: 'Gilroy-Regular'; }
 
+.life-after__subtitle {
+  margin-bottom: 4vw;
+  position: relative; }
+  .life-after__subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 275px;
+    height: 1px;
+    background-color: #653CBC; }
+
+.life-after__card-step {
+  border: 1px solid rgba(101, 60, 188, 0.3);
+  background-color: #E2E2F5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 530px;
+  width: 100%;
+  margin: 0 20px;
+  height: 150px;
+  padding: 0 30px; }
+  .life-after__card-step__num {
+    font-family: 'Gilroy-Bold';
+    font-weight: 900;
+    font-size: 72px;
+    color: #653CBC;
+    margin-right: 20px; }
+  .life-after__card-step__main {
+    font-size: 18px;
+    font-family: 'Gilroy-Regular';
+    font-weight: 400; }
+
 @media screen and (max-width: 1600px) {
   .debt__money--1 {
     width: 190px;
@@ -821,7 +936,9 @@ body {
   .help__box {
     width: 200px; }
   .help__screen__inner p {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .life-after__card-step__main {
+    font-size: 16px; } }
 
 @media screen and (max-width: 1200px) {
   .trust {
@@ -868,7 +985,14 @@ body {
     .security__subtitle {
       text-align: center; }
   .help__screen__inner p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .life-after__subtitle::after {
+    display: none; }
+  .life-after__row {
+    flex-direction: column;
+    align-items: center; }
+  .life-after__card-step {
+    margin: 25px 0; } }
 
 @media screen and (max-width: 992px) {
   .quiz__text {
@@ -980,7 +1104,25 @@ body {
       padding: 70px; }
       .help__screen__inner p {
         position: relative;
-        font-size: 24px; } }
+        font-size: 24px; }
+  .form-block {
+    padding-top: 30px; }
+    .form-block__title {
+      text-align: center; }
+    .form-block__subtitle {
+      justify-content: center; }
+    .form-block__row {
+      flex-direction: column;
+      align-items: center; }
+    .form-block__description {
+      margin-right: 0;
+      margin-bottom: 35px; }
+    .form-block__offer {
+      text-align: center;
+      background-color: #fff;
+      font-size: 18px;
+      padding: 0;
+      margin-top: 35px; } }
 
 @media screen and (max-width: 850px) {
   .debt__dots {
@@ -1094,6 +1236,10 @@ body {
     margin: 10px 0; } }
 
 @media screen and (max-width: 575px) {
+  .subtitle-purple {
+    font-size: 16px;
+    line-height: 19px;
+    color: #261E3B; }
   .quiz__title {
     margin-bottom: 13px; }
   .quiz__subtitle {

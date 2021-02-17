@@ -22,6 +22,13 @@
     .help__screen__inner
         p
             font-size: 18px
+    .life-after
+        &__card-step
+            &__num
+
+            &__main
+                font-size: 16px
+    
         
 
 @media screen and (max-width: 1200px)
@@ -77,6 +84,18 @@
     .help__screen__inner
         p
             font-size: 16px
+    .life-after
+        &__subtitle
+            &::after
+                display: none
+        &__row
+            flex-direction: column
+            align-items: center
+        &__card-step
+            margin: 25px 0
+            &__num
+
+            &__main
 
 
 
@@ -199,6 +218,24 @@
                 p
                     position: relative
                     font-size: 24px
+    .form-block
+        padding-top: 30px
+        &__title
+            text-align: center
+        &__subtitle
+            justify-content: center
+        &__row
+            flex-direction: column
+            align-items: center
+        &__description
+            margin-right: 0
+            margin-bottom: 35px
+        &__offer
+            text-align: center
+            background-color: #fff
+            font-size: 18px
+            padding: 0
+            margin-top: 35px
 
 @media screen and (max-width: 850px)
     .debt
@@ -317,6 +354,11 @@
             margin: 10px 0
 
 @media screen and (max-width: 575px)
+    .subtitle-purple
+        font-size: 16px
+        line-height: 19px
+        color: $dark
+
     .quiz
         &__title
             margin-bottom: 13px
