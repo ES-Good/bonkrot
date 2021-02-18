@@ -12,6 +12,9 @@
             margin-left: 0
 
 @media screen and (max-width: 1400px)
+    .doubt
+        &__row
+            padding-right: 0
     .trust
         &__wrap
             padding-left: 0
@@ -29,9 +32,60 @@
             &__main
                 font-size: 16px
     
-        
+@media screen and (max-width: 1300px)
+    .footer
+        &__row
+            padding-right: 0     
 
 @media screen and (max-width: 1200px)
+    .comments
+        padding-top: 50px
+        &__subtitle
+            margin-bottom: 60px
+        &__desctop
+            display: none
+        &__mobile
+            display: flex
+    .footer
+        padding-top: 70px
+        padding-bottom: 60px
+        &__subtitle
+            font-size: 27px
+            line-height: 32px
+        &__info
+            font-size: 16px
+            margin-bottom: 50px
+            max-width: 570px
+        &__text
+            font-size: 20px
+            line-height: 23px
+            max-width: 570px
+        & .form__title
+            font-size: 21px
+            line-height: 25px
+        & .footer__input 
+            padding: 15px
+        &__title
+            max-width: 570px
+        &__subtitle
+            max-width: 570px
+        &__form
+            margin-top: -140px
+    .doubt
+        padding-top: 75px
+        &__circles
+            width: 70px
+        &__img
+            max-width: 470px
+            margin-right: 10px
+        &__box
+            padding-top: 30px
+        &__text
+            font-size: 21px
+            line-height: 25px
+            margin-bottom: 45px
+        &__title
+            margin-bottom: 30px
     .trust
         padding-top: 80px
         &__box
@@ -121,6 +175,35 @@
 
 
 @media screen and (max-width: 992px)
+    .footer
+        &__title
+            max-width: 390px
+        &__subtitle
+            max-width: 390px
+        &__info
+            max-width: 390px
+        &__text
+            max-width: 390px
+        &__form
+            margin-top: 0
+    .doubt
+        &__circles
+            display: none
+        &__row
+            padding-left: 0
+        &__box
+            padding-top: 0
+            & p:nth-child(1)
+                margin-bottom: 10px
+            & p:nth-child(5)
+                margin-bottom: 20px
+            &-text
+                font-size: 16px
+                line-height: 19px
+                &--string
+                    padding-left: 15px
+        &__img
+            max-width: 413px
     .quiz
         &__text
             font-size: 20px
@@ -259,11 +342,67 @@
             margin-top: 35px
 
 @media screen and (max-width: 850px)
+    .doubt
+        &__img
+            max-width: 400px 
     .debt
         &__dots
             bottom: -90px
 
 @media screen and (max-width: 767px)
+    .footer
+        padding-bottom: 140px
+        &__row
+            flex-direction: column
+            align-items: center
+        &__title
+            margin: auto
+            text-align: center
+            margin-bottom: 10px
+        &__subtitle
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+        &__text
+            position: absolute
+            bottom: 30px
+            left: 50%
+            transform: translateX(-50%)
+            width: 355px
+        &__substrate
+            display: block
+        &__img
+            display: none
+        &__menu__tel-img
+            display: none !important
+        &-menu
+            text-align: center
+            padding: 30px !important
+            & span
+                display: block !important
+                order: 1
+                margin-bottom: 29px
+                font-size: 30px
+                line-height: 38px
+                font-family: 'Gilroy-Black'
+            & .menu__text
+                display: block !important
+                order: 2
+            & .menu__row
+                flex-direction: column
+            & .menu__city
+                order: 0
+                margin-bottom: 20px
+    .doubt
+        padding-bottom: 50px
+        &__text
+            margin-bottom: 30px
+        &__row
+            flex-direction: column
+        &__img
+            max-width: 100%
+            margin-right: 0
+            margin-bottom: 30px
     .section
         padding-left: 10px
         padding-right: 10px
@@ -375,6 +514,48 @@
             margin: 10px 0
 
 @media screen and (max-width: 575px)
+    .comments
+        padding-top: 30px
+        &__title
+            margin-bottom: 10px
+        &__subtitle
+            margin-bottom: 30px
+    .footer
+        padding-top: 50px
+        padding-bottom: 120px
+        &__subtitle
+            font-size: 24px
+            line-height: 29px
+            margin-bottom: 40px
+        &__info
+            font-size: 14px
+        &__text
+            font-size: 16px
+            line-height: 19px
+            width: 300px
+        & .form__title
+            font-size: 18px
+            line-height: 22px
+        &__button
+            width: 100%
+            font-size: 14px
+            padding: 20px
+        &__form
+            &-text
+                font-size: 12px
+                line-height: 14px
+        & .form__radio-container
+            margin-bottom: 0
+        & .form__radio-container__title
+            margin-top: 5px
+    .doubt
+        padding-top: 50px
+        &__text
+            font-size: 18px
+            line-height: 22px
+            color: $dark
+        &__title
+            margin-bottom: 20px
     .subtitle-purple
         font-size: 16px
         line-height: 19px
