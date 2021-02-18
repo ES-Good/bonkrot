@@ -1,0 +1,97 @@
+.comments
+  padding-top: 140px
+  background: linear-gradient(to bottom, #F0F4FB 75%, #FFFFFF 75%)
+  padding-bottom: 70px
+  &__card
+    position: relative
+    cursor: pointer
+  &__title
+    margin: auto
+    text-align: center
+  &__subtitle
+    margin: auto
+    text-align: center
+    margin-bottom: 90px
+  &__dynamic
+    position: absolute
+    background-color: #fff
+    left: 50%
+    top: 0
+    transform: translateX(-50%)
+    width: 50%
+    display: flex
+    justify-content: center
+    padding-top: 5px
+    padding-bottom: 5px
+    border-radius: 0 0 7px 7px 
+  &__play
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  &__card
+    border: 5px solid $purple
+    box-shadow: 0px 45px 40px -30px rgba(101, 60, 188, 0.3)
+    border-radius: 32px
+  &__video
+    border: 8px solid $white
+    border-radius: 32px
+    display: flex
+    align-items: center
+    & img
+      border-radius: 20px
+  &__button
+    position: absolute
+    right: -10px
+    top: 95px
+  &__buttons
+    position: absolute
+    left: -10px
+    top: 75px
+  &__mobile
+    display: none
+
+.slick-next
+  bottom: -50px
+  top: auto
+  right: 10%
+  width: 37px
+  height: 16px
+  background: url(../img/comments/next.png) no-repeat center
+  cursor: pointer
+  &::before
+    display: none
+.slick-prev
+  bottom: -50px
+  top: auto
+  left: 10%
+  width: 37px
+  height: 16px
+  background: url(../img/comments/prev.png) no-repeat center
+  cursor: pointer
+  &::before
+    display: none
+.slick-slider
+  margin-bottom: 0
+.slick-dots
+  bottom: -50px
+  width: auto
+  left: 50%
+  transform: translate(-50%, -5px)
+.slick-slide
+  margin-right: 30px
+.slick-dots li button:before
+  content: ''
+  width: 16px
+  height: 16px
+  background-color: #C4C4C4
+  opacity: 1
+  border-radius: 16px
+.slick-dots li.slick-active button:before
+  transition: 0.3s
+  width: 40px
+  background-color: $purple
+  opacity: 1
+li.slick-active
+  transition: 0.3s
+  margin-right: 20px
