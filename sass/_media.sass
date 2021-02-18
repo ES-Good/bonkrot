@@ -7,11 +7,23 @@
 
 
 @media screen and (max-width: 1550px)
+    .positive
+        &__content
+            margin-left: -120px
     .main
         &__box
             margin-left: 0
 
 @media screen and (max-width: 1400px)
+    .positive
+        &__box
+            flex-direction: column
+            align-items: center
+        &__content
+            margin-left: 0
+            margin-top: -70%
+        &__row
+            justify-content: space-around
     .doubt
         &__row
             padding-right: 0
@@ -38,6 +50,18 @@
             padding-right: 0     
 
 @media screen and (max-width: 1200px)
+    .positive
+        padding-top: 130px
+        padding-left: 30px
+        padding-right: 30px
+        &__subtitle
+            margin-bottom: 80px
+        &__content
+            &-title
+                font-size: 24px
+                line-height: 29px
+        &__row
+            justify-content: space-between
     .comments
         padding-top: 50px
         &__subtitle
@@ -154,6 +178,14 @@
 
 
 @media screen and (max-width: 992px)
+    .positive
+        &__row
+            flex-direction: column
+            align-items: center
+        &__box
+            margin-bottom: 25px
+            &:last-of-type
+                margin-bottom: 0
     .footer
         &__title
             max-width: 390px
@@ -493,8 +525,44 @@
             margin: 10px 0
 
 @media screen and (max-width: 575px)
+    .positive
+        padding-left: 15px
+        padding-right: 15px
+        &__marker
+            width: 21px
+            left: -35px
+            top: 0px
+        &__img
+            display: none
+        &__subtitle
+            margin-bottom: 50px
+        &__box
+            &--right
+                text-align: right
+                & .positive__marker
+                    left: auto
+                    right: -30px
+        &__content
+            margin-top: 0
+            min-height: 0
+            padding-top: 30px
+            padding-bottom: 10px
+            padding-left: 25px
+            padding-right: 20px
+            &-title
+                font-size: 18px
+                line-height: 22px
+                margin-bottom: 20px
+            &-text
+                font-size: 14px
+                line-height: 17px
+                margin-bottom: 15px
+    .positive
+        padding-top: 50px
+        &__title
+            margin-bottom: 10px
     .comments
-        padding-top: 30px
+        padding-top: 50px
         &__title
             margin-bottom: 10px
         &__subtitle
