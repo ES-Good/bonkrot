@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Gilroy-Black';
   src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
@@ -919,6 +920,55 @@ body {
     font-family: 'Gilroy-Regular';
     font-weight: 400; }
 
+.doubt {
+  padding-top: 100px;
+  background-color: #FFFFFF; }
+  .doubt__row {
+    padding-right: 100px;
+    padding-left: 30px; }
+  .doubt__text {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #653CBC;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 65px; }
+  .doubt__title {
+    text-align: center;
+    margin-bottom: 40px; }
+  .doubt__img {
+    position: relative; }
+  .doubt__circles {
+    position: absolute;
+    left: -42px;
+    top: 24%; }
+  .doubt__box {
+    padding-top: 70px; }
+    .doubt__box p:nth-child(1) {
+      margin-bottom: 20px; }
+    .doubt__box p:nth-child(5) {
+      margin-bottom: 30px; }
+    .doubt__box p:nth-child(6) {
+      max-width: 500px; }
+    .doubt__box-text {
+      font-family: 'Gilroy-Medium';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px; }
+      .doubt__box-text--string {
+        padding-left: 20px;
+        position: relative; }
+        .doubt__box-text--string::before {
+          content: '—';
+          position: absolute;
+          left: 0; }
+
 @media screen and (max-width: 1600px) {
   .debt__money--1 {
     width: 190px;
@@ -929,6 +979,8 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 1400px) {
+  .doubt__row {
+    padding-right: 0; }
   .trust__wrap {
     padding-left: 0; }
     .trust__wrap-case {
@@ -941,6 +993,21 @@ body {
     font-size: 16px; } }
 
 @media screen and (max-width: 1200px) {
+  .doubt {
+    padding-top: 75px; }
+    .doubt__circles {
+      width: 70px; }
+    .doubt__img {
+      max-width: 470px;
+      margin-right: 10px; }
+    .doubt__box {
+      padding-top: 30px; }
+    .doubt__text {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 45px; }
+    .doubt__title {
+      margin-bottom: 30px; }
   .trust {
     padding-top: 80px; }
     .trust__box--right {
@@ -995,6 +1062,23 @@ body {
     margin: 25px 0; } }
 
 @media screen and (max-width: 992px) {
+  .doubt__circles {
+    display: none; }
+  .doubt__row {
+    padding-left: 0; }
+  .doubt__box {
+    padding-top: 0; }
+    .doubt__box p:nth-child(1) {
+      margin-bottom: 10px; }
+    .doubt__box p:nth-child(5) {
+      margin-bottom: 20px; }
+    .doubt__box-text {
+      font-size: 16px;
+      line-height: 19px; }
+      .doubt__box-text--string {
+        padding-left: 15px; }
+  .doubt__img {
+    max-width: 413px; }
   .quiz__text {
     font-size: 20px;
     line-height: 24px; }
@@ -1125,10 +1209,20 @@ body {
       margin-top: 35px; } }
 
 @media screen and (max-width: 850px) {
+  .doubt__img {
+    max-width: 400px; }
   .debt__dots {
     bottom: -90px; } }
 
 @media screen and (max-width: 767px) {
+  .doubt__text {
+    margin-bottom: 30px; }
+  .doubt__row {
+    flex-direction: column; }
+  .doubt__img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px; }
   .section {
     padding-left: 10px;
     padding-right: 10px; }
@@ -1236,6 +1330,14 @@ body {
     margin: 10px 0; } }
 
 @media screen and (max-width: 575px) {
+  .doubt {
+    padding-top: 50px; }
+    .doubt__text {
+      font-size: 18px;
+      line-height: 22px;
+      color: #261E3B; }
+    .doubt__title {
+      margin-bottom: 20px; }
   .subtitle-purple {
     font-size: 16px;
     line-height: 19px;
