@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Gilroy-Black';
   src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
@@ -786,6 +787,7 @@ body {
 
 .help {
   background-color: #F0F4FB;
+  padding-bottom: 100px;
   position: relative; }
   .help__inner {
     width: 100%; }
@@ -822,7 +824,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -300px;
+    bottom: -200px;
     width: 80%;
     display: flex;
     justify-content: center; }
@@ -848,7 +850,7 @@ body {
       margin: 0 auto; }
 
 .form-block {
-  padding-top: 400px;
+  padding: 400px 0px 300px;
   background-color: #FFFFFF; }
   .form-block__row {
     justify-content: center; }
@@ -919,6 +921,52 @@ body {
       font-size: 18px;
       font-family: 'Gilroy-Regular';
       font-weight: 400; }
+
+.emotion {
+  background-image: url(../img/emotion/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .emotion__mobile-img {
+    display: none; }
+  .emotion__pt {
+    padding-top: 100px; }
+  .emotion__negative {
+    position: relative;
+    padding-right: 80px;
+    width: 33%; }
+    .emotion__negative__img {
+      position: absolute;
+      top: 60px;
+      right: -80px; }
+  .emotion__positive {
+    position: relative;
+    padding-left: 40px;
+    width: 33%; }
+    .emotion__positive__img {
+      position: absolute;
+      top: 60px;
+      left: -80px; }
+  .emotion__list {
+    list-style: none;
+    font-family: 'Gilroy-Regular';
+    padding: 0; }
+    .emotion__list__item {
+      font-size: 18px;
+      margin: 15px 0;
+      position: relative; }
+      .emotion__list__item::before {
+        content: '•';
+        color: #653CBC;
+        font-size: 48px;
+        position: absolute;
+        top: -15px; }
+    .emotion__list__item_negative {
+      padding-left: 0;
+      text-align: right; }
+      .emotion__list__item_negative::before {
+        right: -20px; }
+    .emotion__list__item_positive::before {
+      left: -20px; }
 
 @media screen and (max-width: 1600px) {
   .debt__money--1 {
@@ -993,7 +1041,28 @@ body {
     flex-direction: column;
     align-items: center; }
   .life-after__card-step {
-    margin: 25px 0; } }
+    margin: 25px 0; }
+  .emotion {
+    position: relative;
+    background-image: none;
+    padding: 0; }
+    .emotion__mobile-img {
+      display: block;
+      position: absolute; }
+    .emotion__row {
+      flex-direction: column; }
+    .emotion__img-block {
+      display: none; }
+    .emotion__negative {
+      width: auto;
+      align-self: flex-end; }
+      .emotion__negative__img {
+        display: none; }
+    .emotion__positive {
+      width: auto;
+      align-self: flex-start; }
+      .emotion__positive__img {
+        display: none; } }
 
 @media screen and (max-width: 992px) {
   .quiz__text {
