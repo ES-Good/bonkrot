@@ -1,0 +1,48 @@
+.emotion
+    background-image: url(../img/emotion/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    &__mobile-img
+        display: none
+    &__pt
+        padding-top: 100px
+    &__negative
+        position: relative
+        padding-right: 80px
+        width: 33%
+        &__img
+            position: absolute
+            top: 60px
+            right: -80px
+    &__positive
+        position: relative
+        padding-left: 40px
+        width: 33%
+        &__img
+            position: absolute
+            top: 60px
+            left: -80px
+
+    &__list
+        list-style: none
+        @include f-fam-Gil-R
+        padding: 0
+        &__item
+            font-size: 18px
+            margin: 15px 0
+            position: relative
+            &::before
+                content: '•'
+                color: #653CBC
+                font-size: 48px
+                position: absolute
+                top: -15px
+        &__item_negative
+            padding-left: 0
+            text-align: right
+            &::before
+                right: -20px
+        &__item_positive
+            &::before
+                left: -20px
+        
