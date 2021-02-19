@@ -1,0 +1,56 @@
+.internet
+  padding-top: 60px
+  padding-bottom: 100px
+  &__container
+    transition: 0.3s
+    display: grid
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr)
+    grid-gap: 30px
+  &__title
+    margin: auto
+    text-align: center
+    margin-bottom: 40px
+  &__subtitle
+    font-family: 'Gilroy-Medium'
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    text-align: center
+    color: $purple
+    margin: auto
+    max-width: 1120px
+    margin-bottom: 100px
+  &__more
+    font-family: 'Gilroy-Regular'
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    color: $dark
+    display: none
+  &__card
+    &-text
+      font-family: 'Gilroy-Regular'
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+      color: $dark
+      max-width: 500px
+    &-title
+      font-family: 'Gilroy-Bold'
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+      color: $dark
+      max-width: 430px
+  &__wrap
+    display: flex
+    align-items: center
+    margin-bottom: 25px
+  &__img
+    margin-right: 15px
+    width: 64px
+    height: 64px

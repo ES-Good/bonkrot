@@ -1,4 +1,8 @@
 @media screen and (max-width: 1600px)
+    .internet
+        &__card
+            &-title
+                max-width: 330px
     .debt
         &__money
             &--1
@@ -21,6 +25,10 @@
             margin-left: 0
 
 @media screen and (max-width: 1400px)
+    .internet
+        &__card
+            &-title
+                max-width: 280px
     .digits
         &__box
             grid-template-columns: 1fr 1fr
@@ -66,6 +74,28 @@
             padding-right: 0     
 
 @media screen and (max-width: 1200px)
+    .internet
+        padding-bottom: 70px
+        &__wrap
+            margin-bottom: 17px
+        &__container
+            grid-template: repeat(5, 1fr) / 1fr 1fr
+            grid-gap: 20px
+        &__title
+            margin-bottom: 30px
+        &__subtitle
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 85px
+            max-width: 860px
+        &__card
+            &-text
+                font-size: 16px
+                line-height: 20px
+            &-title
+                max-width: 215px
+            &:last-of-type
+                transform: translateX(50%)
     .stages
         background-size: 50%
         padding-top: 70px
@@ -494,6 +524,22 @@
             bottom: -90px
 
 @media screen and (max-width: 767px)
+    .internet
+        &__container
+            display: flex
+            flex-direction: column
+            align-items: center
+            grid-gap: 25px
+        &__card
+            &-title
+                max-width: 320px
+            &:last-of-type
+                transform: none
+            &--none
+                display: none
+        &__more
+            display: block
+            margin-top: 20px
     .property
         &__row
             flex-direction: column
@@ -667,6 +713,26 @@
             margin: 10px 0
 
 @media screen and (max-width: 575px)
+    .internet
+        padding-top: 50px
+        padding-bottom: 50px
+        &__title
+            margin-bottom: 20px
+        &__subtitle
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 70px
+            color: $dark
+        &__card
+            &-title
+                font-size: 16px
+                line-height: 20px
+                max-width: 215px
+            &-text
+                font-size: 14px
+                line-height: 17px
+        &__wrap
+            margin-bottom: 10px
     .stages
         padding-top: 60px
         padding-bottom: 60px
