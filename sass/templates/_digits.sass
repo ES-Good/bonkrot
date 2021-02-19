@@ -1,0 +1,43 @@
+.digits
+  padding-top: 150px
+  &__row
+    align-items: center
+  &__title
+    color: $purple
+    max-width: 410px
+    margin-right: 20px
+  &__box
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    column-gap: 10px
+  &__card
+    padding: 40px 10px
+    text-align: center
+    background: $white
+    box-shadow: 0px 4px 20px rgba(101, 60, 188, 0.1)
+    border-bottom: 4px solid $purple
+    display: grid
+    grid-template-rows: 1fr 1fr
+    &-title
+      font-family: 'Gilroy-Black'
+      font-style: normal
+      font-weight: normal
+      font-size: 48px
+      line-height: 61px
+      color: $purple
+    &-subtitle
+      font-family: 'Gilroy-Regular'
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: $black
+    &-text
+      max-width: 255px
+      font-family: 'Gilroy-Medium'
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+    &-wrap
+      margin-bottom: 20px
