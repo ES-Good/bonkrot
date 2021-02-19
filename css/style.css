@@ -887,7 +887,8 @@ body {
     font-family: 'Gilroy-Regular'; }
 
 .life-after {
-  padding-top: 4vw; }
+  padding-top: 4vw;
+  padding-bottom: 8vw; }
   .life-after__subtitle {
     margin-bottom: 4vw;
     position: relative; }
@@ -967,10 +968,21 @@ body {
         right: -20px; }
     .emotion__list__item_positive::before {
       left: -20px; }
+  .emotion .list-title {
+    display: none;
+    font-size: 24px;
+    font-family: 'Gilroy-Regular'; }
+    .emotion .list-title_negative {
+      text-align: right; }
 
 .stages {
+  position: relative;
   padding-top: 80px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  background-image: url(../img/stages/man.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 100%; }
   .stages__title {
     margin: auto;
     text-align: center;
@@ -986,10 +998,55 @@ body {
     margin: auto;
     max-width: 1030px;
     margin-bottom: 120px; }
+  .stages__box--left {
+    text-align: right;
+    margin-right: 70px; }
+  .stages__card {
+    margin-bottom: 50px; }
+    .stages__card-title {
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: #261E3B; }
+      .stages__card-title--left {
+        margin-right: 20px; }
+    .stages__card-text {
+      font-family: 'Gilroy-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: #261E3B;
+      max-width: 500px; }
+  .stages__marker {
+    background-color: #653CBC;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF; }
+    .stages__marker--right {
+      margin-right: 20px; }
+  .stages__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; }
+    .stages__wrap--left {
+      justify-content: flex-end; }
 
 .property {
   background: linear-gradient(to bottom, #FFFFFF 50%, #F0F4FB 50%);
-  padding-top: 90px;
+  padding-top: 67px;
   padding-bottom: 90px; }
   .property__row {
     align-items: flex-end;
@@ -1384,6 +1441,19 @@ li.slick-active {
     padding-right: 0; } }
 
 @media screen and (max-width: 1200px) {
+  .stages {
+    background-size: 50%;
+    padding-top: 70px; }
+    .stages__subtitle {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 80px;
+      max-width: 860px; }
+    .stages__title {
+      margin-bottom: 30px; }
+    .stages__card-text {
+      font-size: 16px;
+      line-height: 20px; }
   .property__title {
     font-size: 30px;
     line-height: 39px;
@@ -1519,26 +1589,60 @@ li.slick-active {
   .emotion {
     position: relative;
     background-image: none;
-    padding: 0; }
+    padding: 0 !important; }
     .emotion__mobile-img {
       display: block;
+      width: 350px;
       position: absolute; }
+    .emotion__list-title {
+      display: block; }
     .emotion__row {
-      flex-direction: column; }
+      flex-direction: column;
+      overflow: hidden;
+      padding-bottom: 150px; }
     .emotion__img-block {
       display: none; }
     .emotion__negative {
       width: auto;
-      align-self: flex-end; }
+      align-self: flex-end;
+      padding-right: 15%; }
       .emotion__negative__img {
         display: none; }
+      .emotion__negative__img-mobile {
+        right: 0;
+        top: 0;
+        transform: translateX(50%); }
     .emotion__positive {
       width: auto;
-      align-self: flex-start; }
+      align-self: flex-start;
+      padding-left: 15%; }
       .emotion__positive__img {
-        display: none; } }
+        display: none; }
+      .emotion__positive__img-mobile {
+        left: 0;
+        top: 0;
+        transform: translateX(-50%); }
+    .emotion .list-title {
+      display: block; } }
 
 @media screen and (max-width: 992px) {
+  .stages {
+    background-image: none; }
+    .stages__row {
+      flex-direction: column;
+      align-items: center; }
+    .stages__box {
+      text-align: left; }
+      .stages__box--left {
+        margin-right: 0;
+        margin-bottom: 20px; }
+    .stages__marker {
+      margin-right: 15px;
+      order: -1; }
+    .stages__card-title--left {
+      margin-right: 0; }
+    .stages__wrap--left {
+      justify-content: flex-start; }
   .property {
     background: #261E3B;
     padding-top: 60px;
@@ -1897,6 +2001,26 @@ li.slick-active {
     margin: 10px 0; } }
 
 @media screen and (max-width: 575px) {
+  .stages {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .stages__subtitle {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 60px; }
+    .stages__title {
+      margin-bottom: 20px; }
+    .stages__card {
+      margin-bottom: 20px; }
+      .stages__card:last-of-type {
+        margin-bottom: 0; }
+      .stages__card-title {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 245px; }
+      .stages__card-text {
+        font-size: 14px;
+        line-height: 17px; }
   .property__title {
     font-size: 24px;
     line-height: 31px; }
@@ -2109,7 +2233,9 @@ li.slick-active {
     margin: 25px 0;
     padding: 0; }
     .life-after__card-step__main {
-      text-align: center; } }
+      text-align: center; }
+  .emotion__list__item {
+    font-size: 14px; } }
 
 @media screen and (max-width: 420px) {
   .quiz__text {
