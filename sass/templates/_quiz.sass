@@ -2,6 +2,8 @@
   background-color: $white
   padding-top: 80px
   padding-bottom: 80px
+  &--5
+    position: relative
   &__title, .quiz__subtitle
     text-align: center
   &__subtitle
@@ -18,6 +20,8 @@
       background-color: $purple
   &__img
     position: relative
+    &--mobile
+      margin-right: 150px
   &__dots
     position: absolute
     top: 23%
@@ -48,3 +52,118 @@
     margin-bottom: 30px
     &:last-of-type
       margin-bottom: 0 !important
+  &__button
+    padding: 20px 45px
+    margin-right: 10px
+    &:last-of-type
+      margin-right: 0
+  &__span
+    font-family: 'Gilroy-Medium'
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: $dark
+    max-width: 370px
+    display: block
+  &__input
+    display: none
+    &:checked + .quiz__marker>.quiz__dot
+      background-color: $purple
+    &-group
+      padding-left: 50px
+      margin-bottom: 40px
+  &__label
+    position: relative
+    cursor: pointer
+  &__marker
+    width: 32px
+    height: 32px
+    border: 2px solid $purple
+    border-radius: 50%
+    position: absolute
+    left: -50px
+    top: 0
+    transform: translateY(-17%)
+    display: flex
+    justify-content: center
+    align-items: center
+  &__dot
+    width: 12px
+    height: 12px
+    background-color: transparent
+    border-radius: 50%
+  &__row
+    &--mobile
+      justify-content: flex-start
+  &__form
+    min-height: 390px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__tel
+    background: #F8F8F8
+    border: 1px solid #E0E0E0
+    box-shadow: 0px 50px 50px -40px rgba(0, 0, 0, 0.15)
+    border-radius: 16px
+    padding: 20px 30px
+    font-family: 'Gilroy-Medium'
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #929292
+    width: 380px
+    &:focus
+      outline: none
+  &__modal
+    padding: 100px 80px
+    background: $white
+    border: 2px solid $purple
+    box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5);
+    border-radius: 30px
+    max-width: 340px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    &-close
+      position: absolute
+      right: 20px
+      top: 20px
+      cursor: pointer
+    &-wrap
+      z-index: 5
+      width: 100%
+      height: 100%
+      position: fixed
+      left: 0
+      top: 0
+      display: flex
+      justify-content: center
+      align-items: center
+    &--hidden
+      display: none
+    &-img
+      margin-bottom: 30px
+    &-title
+      font-family: 'Gilroy-Bold'
+      font-style: normal
+      font-weight: normal
+      font-size: 36px
+      line-height: 45px
+      text-align: center
+      color: $purple
+      margin-bottom: 60px
+    &-text
+      font-family: 'Gilroy-Regular'
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      text-align: center
+      color: $dark
+      margin-bottom: 30px
+      &:last-of-type
+        margin-bottom: 0
+      

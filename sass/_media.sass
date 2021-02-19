@@ -74,6 +74,40 @@
             padding-right: 0     
 
 @media screen and (max-width: 1200px)
+    .quiz
+        &__img
+            &--mobile
+                margin-right: 0
+        &__row
+            &--mobile
+                justify-content: space-between
+        &__box
+            &-title
+                &--mobile
+                    font-size: 21px
+                    line-height: 24px
+        &__span
+            font-size: 17px
+            line-height: 20px
+        &__input
+            &-group
+                margin-bottom: 30px
+        &__modal
+            padding: 70px 60px
+            min-width: 320px
+            z-index: 5 
+            &-title
+                font-size: 30px
+                line-height: 37px
+                margin-bottom: 50px
+            &-text
+                font-size: 21px
+                line-height: 25px
+            &-img
+                width: 96px
+                height: 96px
+    .form-block
+        padding-bottom: 80px
     .internet
         padding-bottom: 70px
         &__wrap
@@ -245,6 +279,8 @@
     .help__screen__inner
         p
             font-size: 16px
+    .help
+        padding-bottom: 90px
     .life-after
         &__subtitle
             &::after
@@ -270,7 +306,7 @@
         &__row
             flex-direction: column
             overflow: hidden
-            padding-bottom: 150px
+            padding-bottom: 65px
         &__img-block
             display: none
         &__negative
@@ -388,6 +424,13 @@
         &__row
             flex-direction: column
             align-items: center
+            &--mobile
+                flex-direction: row
+                align-items: flex-start
+        &__form
+            min-height: 300px
+        &__tel
+            width: 80%
         &__box
             display: flex
             flex-wrap: wrap
@@ -524,6 +567,17 @@
             bottom: -90px
 
 @media screen and (max-width: 767px)
+    .quiz
+        &__img
+            &--mobile
+                display: none
+        &__box
+            &--mobile
+                flex-direction: column
+                align-items: center
+        &__row
+            &--mobile
+                justify-content: center
     .internet
         &__container
             display: flex
@@ -890,6 +944,39 @@
             font-size: 16px
             line-height: 19px
             color: $dark
+            &--mobile
+                display: none
+        &__row
+            &--mobile
+                justify-content: flex-start
+        &__box
+            &--mobile
+                align-items: flex-start
+            &-title
+                &--mobile
+                    margin-bottom: 30px
+                    font-size: 18px
+                    line-height: 22px
+        &__span
+            font-size: 14px
+            line-height: 17px
+        &__button
+            padding: 20px 35px
+        &__form
+            border: 2px solid $purple
+            padding: 20px
+            box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5)
+            border-radius: 16px
+        &__modal
+            padding: 50px 10px
+            min-width: 0
+            width: 280px
+            &-title
+                font-size: 24px
+                line-height: 30px
+            &-text
+                font-size: 18px
+                line-height: 22px
     .main
         &__title
             max-width: 320px
@@ -955,7 +1042,10 @@
             font-size: 20px
             line-height: 24px
     .help
+        padding-bottom: 50px
         &__inner
+        &__subtitle
+            color: $purple
 
         &__box
             width: 150px
@@ -988,6 +1078,11 @@
         &__list
             &__item
                 font-size: 14px
+        &__mobile
+            &-img
+                z-index: -1
+    .form-block
+        padding-bottom: 60px
             
 
 
@@ -997,3 +1092,10 @@
     .quiz
         &__text
             max-width: 270px
+
+@media screen and (max-height: 630px)
+    .quiz
+        &__modal
+            &-wrap
+                overflow: scroll
+                align-items: flex-start

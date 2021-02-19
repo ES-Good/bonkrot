@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   const more = document.querySelector('.internet__more'),
-        cards = document.querySelectorAll('.internet__card--none');
+        cards = document.querySelectorAll('.internet__card--none'),
+        closeModal = document.querySelector('.quiz__modal-close');
 
   more.addEventListener('click', () => {
     cards.forEach(card => {
@@ -21,6 +22,10 @@ window.addEventListener('DOMContentLoaded', () => {
         more.textContent = 'Показать ещё...';
       }
     });
+  });
+
+  closeModal.addEventListener('click', () => {
+    closeModal.parentElement.parentElement.classList.toggle('quiz__modal--hidden');
   });
 
 });
