@@ -922,7 +922,6 @@ body {
       font-family: 'Gilroy-Regular';
       font-weight: 400; }
 
-<<<<<<< HEAD
 .positive {
   background-color: #F0F4FB;
   padding-top: 200px; }
@@ -967,8 +966,6 @@ body {
     left: -58px;
     top: -3px; }
 
-=======
-<<<<<<< HEAD
 .emotion {
   background-image: url(../img/emotion/bg.png);
   background-repeat: no-repeat;
@@ -1014,8 +1011,52 @@ body {
         right: -20px; }
     .emotion__list__item_positive::before {
       left: -20px; }
-=======
->>>>>>> ac87c85afad4794d692f6296029df37ce383e5a0
+
+.digits {
+  padding-top: 150px; }
+  .digits__row {
+    align-items: center; }
+  .digits__title {
+    color: #653CBC;
+    max-width: 410px;
+    margin-right: 20px; }
+  .digits__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 10px;
+    column-gap: 10px; }
+  .digits__card {
+    padding: 40px 10px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(101, 60, 188, 0.1);
+    border-bottom: 4px solid #653CBC;
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    .digits__card-title {
+      font-family: 'Gilroy-Black';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 61px;
+      color: #653CBC; }
+    .digits__card-subtitle {
+      font-family: 'Gilroy-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+      color: #595959; }
+    .digits__card-text {
+      max-width: 255px;
+      font-family: 'Gilroy-Medium';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px; }
+    .digits__card-wrap {
+      margin-bottom: 20px; }
+
 .comments {
   padding-top: 140px;
   background: linear-gradient(to bottom, #F0F4FB 70%, #FFFFFF 70%);
@@ -1225,7 +1266,6 @@ li.slick-active {
     font-size: 24px;
     line-height: 29px;
     max-width: 660px; }
->>>>>>> 7866de954aca857f20b43e412ad58e111bf632f8
 
 @media screen and (max-width: 1600px) {
   .debt__money--1 {
@@ -1239,6 +1279,15 @@ li.slick-active {
     margin-left: 0; } }
 
 @media screen and (max-width: 1400px) {
+  .digits__box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px; }
+  .digits__row {
+    justify-content: space-around;
+    align-items: flex-start; }
+  .digits__title {
+    padding-top: 50px; }
   .positive__box {
     flex-direction: column;
     align-items: center; }
@@ -1265,6 +1314,17 @@ li.slick-active {
     padding-right: 0; } }
 
 @media screen and (max-width: 1200px) {
+  .digits {
+    padding-top: 90px; }
+    .digits__card-title {
+      font-size: 39px;
+      line-height: 50px; }
+    .digits__card-subtitle {
+      font-size: 20px;
+      line-height: 24px; }
+    .digits__card-text {
+      font-size: 16px;
+      line-height: 22px; }
   .positive {
     padding-top: 130px;
     padding-left: 30px;
@@ -1399,6 +1459,14 @@ li.slick-active {
         display: none; } }
 
 @media screen and (max-width: 992px) {
+  .digits__row {
+    flex-direction: column;
+    align-items: center; }
+  .digits__title {
+    margin-right: 0;
+    padding-top: 0;
+    margin-bottom: 30px;
+    text-align: center; }
   .positive__row {
     flex-direction: column;
     align-items: center; }
@@ -1729,6 +1797,39 @@ li.slick-active {
     margin: 10px 0; } }
 
 @media screen and (max-width: 575px) {
+  .digits {
+    padding-top: 70px;
+    padding-right: 0; }
+    .digits__row {
+      align-items: flex-end; }
+    .digits__title {
+      max-width: 290px;
+      color: #261E3B;
+      align-self: center; }
+    .digits__box {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .digits__card {
+      padding: 20px;
+      display: flex;
+      flex-direction: column; }
+      .digits__card-title {
+        font-size: 24px;
+        line-height: 31px;
+        margin-right: 10px; }
+      .digits__card-subtitle {
+        font-size: 16px;
+        line-height: 19px; }
+      .digits__card-text {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+        max-width: 100%; }
+      .digits__card-wrap {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center; }
   .positive {
     padding-left: 15px;
     padding-right: 15px; }

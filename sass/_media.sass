@@ -15,6 +15,16 @@
             margin-left: 0
 
 @media screen and (max-width: 1400px)
+    .digits
+        &__box
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            grid-gap: 10px
+        &__row
+            justify-content: space-around
+            align-items: flex-start
+        &__title
+            padding-top: 50px
     .positive
         &__box
             flex-direction: column
@@ -50,6 +60,18 @@
             padding-right: 0     
 
 @media screen and (max-width: 1200px)
+    .digits
+        padding-top: 90px
+        &__card
+            &-title
+                font-size: 39px
+                line-height: 50px
+            &-subtitle
+                font-size: 20px
+                line-height: 24px
+            &-text
+                font-size: 16px
+                line-height: 22px
     .positive
         padding-top: 130px
         padding-left: 30px
@@ -199,6 +221,15 @@
 
 
 @media screen and (max-width: 992px)
+    .digits
+        &__row
+            flex-direction: column
+            align-items: center
+        &__title
+            margin-right: 0
+            padding-top: 0
+            margin-bottom: 30px
+            text-align: center
     .positive
         &__row
             flex-direction: column
@@ -546,6 +577,39 @@
             margin: 10px 0
 
 @media screen and (max-width: 575px)
+    .digits
+        padding-top: 70px
+        padding-right: 0
+        &__row
+            align-items: flex-end
+        &__title
+            max-width: 290px
+            color: $dark
+            align-self: center
+        &__box
+            display: flex
+            flex-direction: column
+            width: 100%
+        &__card
+            padding: 20px
+            display: flex
+            flex-direction: column
+            &-title
+                font-size: 24px
+                line-height: 31px
+                margin-right: 10px
+            &-subtitle
+                font-size: 16px
+                line-height: 19px
+            &-text
+                font-size: 14px
+                line-height: 17px
+                text-align: left
+                max-width: 100%
+            &-wrap
+                margin-bottom: 10px
+                display: flex
+                align-items: center
     .positive
         padding-left: 15px
         padding-right: 15px
