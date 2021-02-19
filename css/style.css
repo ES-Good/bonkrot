@@ -730,6 +730,16 @@ body {
   padding-bottom: 80px; }
   .quiz--5 {
     position: relative; }
+  .quiz--1 {
+    display: none; }
+  .quiz--2 {
+    display: none; }
+  .quiz--3 {
+    display: none; }
+  .quiz--4 {
+    display: none; }
+  .quiz--5 {
+    display: none; }
   .quiz__title, .quiz .quiz__subtitle {
     text-align: center; }
   .quiz__subtitle {
