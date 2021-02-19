@@ -153,24 +153,42 @@
     .emotion
         position: relative
         background-image: none
-        padding: 0
+        padding: 0 !important
         &__mobile-img
             display: block
+            width: 350px
             position: absolute
+        &__list-title
+            display: block
         &__row
             flex-direction: column
+            overflow: hidden
+            padding-bottom: 150px
         &__img-block
             display: none
         &__negative
             width: auto
             align-self: flex-end
+            padding-right: 15%
             &__img
                 display: none
+            &__img-mobile
+                right: 0
+                top: 0
+                transform: translateX(50%)
         &__positive
             width: auto
             align-self: flex-start
+            padding-left: 15%
             &__img
                 display: none
+            &__img-mobile
+                left: 0
+                top: 0
+                transform: translateX(-50%)
+        .list-title
+            display: block
+
 
 
 
@@ -667,6 +685,10 @@
             padding: 0
             &__main
                 text-align: center
+    .emotion
+        &__list
+            &__item
+                font-size: 14px
             
 
 

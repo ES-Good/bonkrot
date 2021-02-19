@@ -887,7 +887,8 @@ body {
     font-family: 'Gilroy-Regular'; }
 
 .life-after {
-  padding-top: 4vw; }
+  padding-top: 4vw;
+  padding-bottom: 8vw; }
   .life-after__subtitle {
     margin-bottom: 4vw;
     position: relative; }
@@ -922,7 +923,6 @@ body {
       font-family: 'Gilroy-Regular';
       font-weight: 400; }
 
-<<<<<<< HEAD
 .emotion {
   background-image: url(../img/emotion/bg.png);
   background-repeat: no-repeat;
@@ -968,7 +968,13 @@ body {
         right: -20px; }
     .emotion__list__item_positive::before {
       left: -20px; }
-=======
+  .emotion .list-title {
+    display: none;
+    font-size: 24px;
+    font-family: 'Gilroy-Regular'; }
+    .emotion .list-title_negative {
+      text-align: right; }
+
 .comments {
   padding-top: 140px;
   background: linear-gradient(to bottom, #F0F4FB 75%, #FFFFFF 75%);
@@ -1178,7 +1184,6 @@ li.slick-active {
     font-size: 24px;
     line-height: 29px;
     max-width: 660px; }
->>>>>>> 7866de954aca857f20b43e412ad58e111bf632f8
 
 @media screen and (max-width: 1600px) {
   .debt__money--1 {
@@ -1311,24 +1316,41 @@ li.slick-active {
   .emotion {
     position: relative;
     background-image: none;
-    padding: 0; }
+    padding: 0 !important; }
     .emotion__mobile-img {
       display: block;
+      width: 350px;
       position: absolute; }
+    .emotion__list-title {
+      display: block; }
     .emotion__row {
-      flex-direction: column; }
+      flex-direction: column;
+      overflow: hidden;
+      padding-bottom: 150px; }
     .emotion__img-block {
       display: none; }
     .emotion__negative {
       width: auto;
-      align-self: flex-end; }
+      align-self: flex-end;
+      padding-right: 15%; }
       .emotion__negative__img {
         display: none; }
+      .emotion__negative__img-mobile {
+        right: 0;
+        top: 0;
+        transform: translateX(50%); }
     .emotion__positive {
       width: auto;
-      align-self: flex-start; }
+      align-self: flex-start;
+      padding-left: 15%; }
       .emotion__positive__img {
-        display: none; } }
+        display: none; }
+      .emotion__positive__img-mobile {
+        left: 0;
+        top: 0;
+        transform: translateX(-50%); }
+    .emotion .list-title {
+      display: block; } }
 
 @media screen and (max-width: 992px) {
   .footer__title {
@@ -1790,7 +1812,9 @@ li.slick-active {
     margin: 25px 0;
     padding: 0; }
     .life-after__card-step__main {
-      text-align: center; } }
+      text-align: center; }
+  .emotion__list__item {
+    font-size: 14px; } }
 
 @media screen and (max-width: 420px) {
   .quiz__text {
