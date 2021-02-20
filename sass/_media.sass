@@ -12,8 +12,8 @@
 
 @media screen and (max-width: 1550px)
     .property
-        &__bg
-            width: 105%
+        &__row
+            padding: 0 40px
     .positive
         &__content
             margin-left: -120px
@@ -153,6 +153,8 @@
             font-size: 20px
             line-height: 24px
             max-width: 480px
+        &__row
+            padding: 0
     .digits
         padding-top: 90px
         &__card
@@ -183,10 +185,6 @@
         padding-top: 50px
         &__subtitle
             margin-bottom: 60px
-        &__desctop
-            display: none
-        &__mobile
-            display: flex
     .footer
         padding-top: 70px
         padding-bottom: 60px
@@ -336,6 +334,11 @@
 
 
 @media screen and (max-width: 992px)
+    .comments
+        &__desctop
+            display: none
+        &__mobile
+            display: flex
     .stages
         background-image: none
         &__row
@@ -464,8 +467,6 @@
             align-items: center
         &__city
             font-size: 21px
-        &__text
-            font-size: 18px
         &__tel
             font-size: 18px
     .main
@@ -567,6 +568,9 @@
             bottom: -90px
 
 @media screen and (max-width: 767px)
+    .life-after
+        &__card-step
+            width: auto
     .policy
         & label.invalid
             left: 35px
@@ -612,6 +616,7 @@
             align-items: center
             grid-gap: 25px
         &__card
+            margin-bottom: 10px
             &-title
                 max-width: 320px
             &:last-of-type
@@ -661,12 +666,14 @@
             & span
                 display: block !important
                 order: 1
-                margin-bottom: 29px
+                margin-bottom: 20px
                 font-size: 30px
                 line-height: 38px
                 font-family: 'Gilroy-Black'
-            & .menu__text
-                display: block !important
+            & .menu__box
+                display: flex
+                flex-direction: column
+                align-items: center
                 order: 2
             & .menu__row
                 flex-direction: column
@@ -689,9 +696,16 @@
     .menu
         padding: 10px 20px
         &__city
-            font-size: 18px
-        &__text
-            display: none
+            &--main
+                display: none
+        &--main .menu__label
+            font-size: 24px
+            line-height: 29px
+        &--main .menu__text
+            font-size: 12px
+            line-height: 15px
+        &--main .menu__img
+            width: 28px
         &__tel
             & span
                  display: none
@@ -860,6 +874,7 @@
             padding: 20px
             display: flex
             flex-direction: column
+            margin-bottom: 10px
             &-title
                 font-size: 24px
                 line-height: 31px

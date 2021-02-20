@@ -504,11 +504,21 @@ body {
   background-color: #653CBC;
   padding: 20px; }
   .menu__text {
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Regular';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF; }
+  .menu__wrap {
+    display: flex;
+    align-items: center; }
+  .menu__label {
+    font-family: 'Gilroy-Black';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
     color: #FFFFFF; }
   .menu__city {
     font-family: 'Gilroy-Black';
@@ -1763,8 +1773,8 @@ form input.invalid {
     top: -40px; } }
 
 @media screen and (max-width: 1550px) {
-  .property__bg {
-    width: 105%; }
+  .property__row {
+    padding: 0 40px; }
   .positive__content {
     margin-left: -120px; }
   .positive__money {
@@ -1881,6 +1891,8 @@ form input.invalid {
     font-size: 20px;
     line-height: 24px;
     max-width: 480px; }
+  .property__row {
+    padding: 0; }
   .digits {
     padding-top: 90px; }
     .digits__card-title {
@@ -1909,10 +1921,6 @@ form input.invalid {
     padding-top: 50px; }
     .comments__subtitle {
       margin-bottom: 60px; }
-    .comments__desctop {
-      display: none; }
-    .comments__mobile {
-      display: flex; }
   .footer {
     padding-top: 70px;
     padding-bottom: 60px; }
@@ -2047,6 +2055,10 @@ form input.invalid {
       display: block; } }
 
 @media screen and (max-width: 992px) {
+  .comments__desctop {
+    display: none; }
+  .comments__mobile {
+    display: flex; }
   .stages {
     background-image: none; }
     .stages__row {
@@ -2165,8 +2177,6 @@ form input.invalid {
       align-items: center; }
     .menu__city {
       font-size: 21px; }
-    .menu__text {
-      font-size: 18px; }
     .menu__tel {
       font-size: 18px; }
   .main {
@@ -2261,6 +2271,8 @@ form input.invalid {
     bottom: -90px; } }
 
 @media screen and (max-width: 767px) {
+  .life-after__card-step {
+    width: auto; }
   .policy label.invalid {
     left: 35px;
     bottom: -13px; }
@@ -2298,12 +2310,14 @@ form input.invalid {
     flex-direction: column;
     align-items: center;
     grid-gap: 25px; }
-  .internet__card-title {
-    max-width: 320px; }
-  .internet__card:last-of-type {
-    transform: none; }
-  .internet__card--none {
-    display: none; }
+  .internet__card {
+    margin-bottom: 10px; }
+    .internet__card-title {
+      max-width: 320px; }
+    .internet__card:last-of-type {
+      transform: none; }
+    .internet__card--none {
+      display: none; }
   .internet__more {
     display: block;
     margin-top: 20px; }
@@ -2346,12 +2360,14 @@ form input.invalid {
       .footer-menu span {
         display: block !important;
         order: 1;
-        margin-bottom: 29px;
+        margin-bottom: 20px;
         font-size: 30px;
         line-height: 38px;
         font-family: 'Gilroy-Black'; }
-      .footer-menu .menu__text {
-        display: block !important;
+      .footer-menu .menu__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         order: 2; }
       .footer-menu .menu__row {
         flex-direction: column; }
@@ -2373,10 +2389,16 @@ form input.invalid {
     padding-right: 10px; }
   .menu {
     padding: 10px 20px; }
-    .menu__city {
-      font-size: 18px; }
-    .menu__text {
+    .menu__city--main {
       display: none; }
+    .menu--main .menu__label {
+      font-size: 24px;
+      line-height: 29px; }
+    .menu--main .menu__text {
+      font-size: 12px;
+      line-height: 15px; }
+    .menu--main .menu__img {
+      width: 28px; }
     .menu__tel span {
       display: none; }
     .menu__tel-img {
@@ -2538,7 +2560,8 @@ form input.invalid {
     .digits__card {
       padding: 20px;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 10px; }
       .digits__card-title {
         font-size: 24px;
         line-height: 31px;
