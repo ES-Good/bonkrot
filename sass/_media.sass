@@ -567,6 +567,33 @@
             bottom: -90px
 
 @media screen and (max-width: 767px)
+    .policy
+        & label.invalid
+            left: 35px
+            bottom: -13px
+    .modal
+        &__form
+            padding: 20px
+            &-title
+                font-size: 30px
+                line-height: 37px
+            &-text
+                font-size: 14px
+                line-height: 17px
+                max-width: 270px
+        &__policy-label
+            max-width: 170px
+        &__input
+            font-size: 14px
+            line-height: 17px
+            padding: 15px
+        &__button
+            font-size: 14px
+            line-height: 17px
+            width: 100%
+        &__close
+            font-size: 16px
+            line-height: 20px
     .quiz
         &__img
             &--mobile
@@ -1089,6 +1116,9 @@
     
 
 @media screen and (max-width: 420px)
+    .modal
+        align-items: flex-start
+        overflow: scroll
     .quiz
         &__text
             max-width: 270px

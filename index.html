@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon.png" type="image/png">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="slick/slick/slick.css">
   <link rel="stylesheet" href="slick/slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>hello</title>
+  <title>Без долгов</title>
 </head>
 <body>
 
@@ -33,7 +34,7 @@
           </div>
         </div>
         <div class="main__img-mobile"><img src="img/main/man.png" alt="man"></div>
-        <button class="main__button">Узнайте, выгодно ли вам обанкротится</button>
+        <button class="main__button button__trigger">Узнайте, выгодно ли вам обанкротится</button>
       </div>
   </section>
 
@@ -551,10 +552,14 @@
           <div class="form-inner position-relative">
             <div class="substrate"></div>
             <div class="form-container">
-              <form action="#" class="form">
+              <form action="#" class="form formblock__form">
                 <h3 class="form__title">Начните с простого шага — <br><b>запишитесь на консультацию</b></h3>
-                <input class="input" type="text" placeholder="Как вас зовут?">
-                <input class="input" type="tel" placeholder="Введите номер телефона">
+                <div class="form-block__input-group">
+                  <input class="input" name="formblockName" type="text" placeholder="Как вас зовут?">
+                </div>
+                <div class="form-block__input-group">
+                  <input class="input" name="formblockTel" type="tel" placeholder="Введите номер телефона">
+                </div>
                   <h5 class="form__radio-container__title">Выберите удобный способ связи</h5>
                   <div class="form__radio-container">
                   <div class="radio-box">
@@ -583,7 +588,7 @@
                   </div>
                 </div>
                 <div class="form__footer">
-                  <button class="button" type="submit">
+                  <button class="button" type="#">
                     Записатся на консультацию
                   </button>
                   <p>
@@ -791,7 +796,7 @@
           <h4 class="property__title">Боитесь, что после банкротства лишитесь имущества?</h4>
           <p class="property__text">Мы готовы развеять ваши страхи и сомнения на бесплатной консультации. Оставьте заявку и мы расскажем, как можем помочь в вашей ситуации, а также ответим на любые вопросы.</p>
         </div>
-        <button class="button property__button">Оставить заявку</button>
+        <button class="button property__button button__trigger">Оставить заявку</button>
       </div>
     </div>
   </section>
@@ -1020,10 +1025,14 @@
         <div class="form-inner position-relative footer__form">
           <div class="substrate footer__substrate"></div>
           <div class="form-container">
-            <form action="#" class="form">
+            <form action="#" class="form footerForm">
               <h3 class="form__title">Начните с простого шага — <br><b>запишитесь на консультацию</b></h3>
-              <input class="input footer__input" type="text" placeholder="Как вас зовут?">
-              <input class="input footer__input" type="tel" placeholder="Введите номер телефона">
+              <div class="input-group">
+                <input class="input footer__input" name="footerName" type="text" placeholder="Как вас зовут?">
+              </div>
+              <div class="input-group">
+                <input class="input footer__input" name="footerTel" type="tel" placeholder="Введите номер телефона">
+              </div>
                 <h5 class="form__radio-container__title">Выберите удобный способ связи</h5>
                 <div class="form__radio-container">
                 <div class="radio-box">
@@ -1077,9 +1086,34 @@
     </div>
   </div>
 
+  <div class="modal">
+    <form action="#" class="modal__form">
+      <div class="modal__close">Закрыть</div>
+      <h3 class="modal__form-title">Оставьте заявку</h3>
+      <p class="modal__form-text">Для получения заявок, оставьте номер телефона и ваше имя. Наш менеджер расскажет вам все подробнее.</p>
+      <div class="input-group modal__input-group"><input name="modalName" placeholder="Как вас зовут?" class="modal__input" type="text"></div>
+      <div class="input-group modal__input-group"><input name="modalTel" placeholder="Введите номер телефона" class="modal__input" type="tel"></div>
+      <div class="policy">
+        <label class="modal__policy-label">
+          Согласие на обработку своих персональных данных
+          <input checked type="checkbox" id="modalCheckbox" class="modal__checkbox" name="policyCheckbox">
+          <div class="modal__marker"></div>
+        </label>
+      </div>
+      <button class="button modal__button">Записаться на консультацию</button>
+    </form>
+  </div>
+
+  <div class="modal-msg">
+    <h3 class="modal-msg-title">Заявка отправлена</h3>
+    <p class="modal-msg-text">Мы получили вашу заявку. Наш менеджер свяжится с вами.</p>
+  </div>
+
   <script src="js/jquery.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="slick/slick/slick.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

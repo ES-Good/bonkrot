@@ -1,7 +1,16 @@
 .form-block
     padding: 300px 0px 100px
     background-color: $white
-    
+    &__input
+        &-group
+            position: relative
+            & label.invalid
+                color: tomato
+                position: absolute
+                width: auto
+                height: auto
+                bottom: -9px
+                left: 10px
     &__row
         justify-content: center
     &__description
