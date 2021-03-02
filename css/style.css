@@ -748,8 +748,6 @@ body {
     display: none; }
   .quiz--4 {
     display: none; }
-  .quiz--5 {
-    display: none; }
   .quiz__title, .quiz .quiz__subtitle {
     text-align: center; }
   .quiz__subtitle {
@@ -845,6 +843,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .quiz__form-box {
+      position: relative; }
   .quiz__tel {
     background: #F8F8F8;
     border: 1px solid #E0E0E0;
@@ -910,6 +910,11 @@ body {
       margin-bottom: 30px; }
       .quiz__modal-text:last-of-type {
         margin-bottom: 0; }
+  .quiz label.invalid {
+    position: absolute;
+    color: tomato;
+    bottom: -20px;
+    left: 0; }
 
 .security {
   background-color: #F0F4FB;

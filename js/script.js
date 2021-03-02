@@ -103,6 +103,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  $(".quiz__form--last").validate({
+    errorClass: "invalid",
+    rules: {
+      quizTel: "required"
+    },
+    messages: {
+      quizTel: "Введите телефон"
+    }
+  });
+
   $('[type="tel"]').mask('+7 (000) 000-00-00');
 
 });

@@ -13,7 +13,7 @@
   &--4
     display: none
   &--5
-    display: none
+    // display: none
   &__title, .quiz__subtitle
     text-align: center
   &__subtitle
@@ -111,6 +111,8 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+    &-box
+      position: relative
   &__tel
     background: #F8F8F8
     border: 1px solid #E0E0E0
@@ -176,4 +178,8 @@
       margin-bottom: 30px
       &:last-of-type
         margin-bottom: 0
-      
+  label.invalid
+    position: absolute
+    color: tomato
+    bottom: -20px
+    left: 0
